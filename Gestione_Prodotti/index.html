@@ -21,9 +21,15 @@
         <input type="text" id="brand" class="form-control mb-2" placeholder="Marca" required />
         <input type="text" id="imageUrl" class="form-control mb-2" placeholder="URL Immagine" required />
         <input type="number" id="price" class="form-control mb-2" placeholder="Prezzo" required />
-        <button type="submit" class="btn btn-primary">Salva Prodotto</button>
-        <button type="button" id="updateButton" class="btn btn-warning" style="display: none">Modifica Prodotto</button>
-        <button type="button" id="deleteButton" class="btn btn-danger" style="display: none">Cancella Prodotto</button>
+        <div class="d-flex justify-content-evenly">
+          <button type="submit" class="btn btn-primary">Salva Prodotto</button>
+          <button type="button" id="updateButton" class="btn btn-warning" style="display: none">
+            Modifica Prodotto
+          </button>
+          <button type="button" id="deleteButton" class="btn btn-danger" style="display: none">
+            Cancella Prodotto
+          </button>
+        </div>
       </form>
     </div>
     <script

@@ -32,8 +32,14 @@ document.getElementById("productDetails").addEventListener("click", function (ev
   if (event.target.id === "editButton") {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get("id");
-    window.location.href = `index.html?id=${productId}`; // Reindirizza al back-office con l'ID del prodotto
+    window.location.href = `index.html?id=${productId}`;
   }
 });
-
+document.getElementById("productDetails").addEventListener("click", function (event) {
+  if (event.target.id === "deleteButton") {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get("id");
+    window.location.href = `index.html?id=${productId}`;
+  }
+});
 getProductDetails();
